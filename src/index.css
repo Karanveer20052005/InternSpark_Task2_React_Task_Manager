@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 50px;
+}
+
+.navbar h2{
+    font-size:28px;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#38bdf8;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+.page-title{
+    text-align:center;
+    margin-bottom:35px;
+    color:#0f172a;
+}
+
+/* Grid */
+
+.task-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+/* Card */
+
+.task-card{
+    background:white;
+    border-radius:12px;
+    padding:22px;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.task-card:hover{
+    transform:translateY(-8px);
+}
+
+.task-card h2{
+    margin-bottom:10px;
+    color:#1e293b;
+}
+
+.task-card p{
+    color:#555;
+    margin-bottom:18px;
+}
+
+.status{
+    display:inline-block;
+    padding:7px 14px;
+    border-radius:20px;
+    background:#e2e8f0;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+/* Buttons */
+
+.buttons{
+    display:flex;
+    gap:10px;
+}
+
+.buttons button{
+    flex:1;
+    border:none;
+    cursor:pointer;
+    color:white;
+    padding:10px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.view-btn{
+    background:#2563eb;
+}
+
+.edit-btn{
+    background:#16a34a;
+}
+
+.delete-btn{
+    background:#dc2626;
+}
+
+.buttons button:hover{
+    opacity:.85;
+}
+
+/* Loader */
+
+.loader{
+    text-align:center;
+    font-size:28px;
+    margin-top:80px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+}
+
+.navbar ul{
+    flex-direction:column;
+    align-items:center;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+}
+.details{
+
+    max-width:700px;
+
+    margin:50px auto;
+
+    text-align:center;
+
+}
+
+
+.details h1{
+
+    color:#0f172a;
+
+    margin-bottom:20px;
+
+}
+
+
+.details p{
+
+    font-size:18px;
+
+    margin-bottom:25px;
+
+}
